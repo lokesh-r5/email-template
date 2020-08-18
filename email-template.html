@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+      <title>Payment Request Email Template</title>
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        table {
+          border-spacing: 0;
+        }
+        td {
+          padding: 0;
+        }
+        a {
+          color: #0077C5;
+        }
+        .email-template {
+          table-layout: fixed;
+          width: 100%;
+          font-family: AvenirNext forINTUIT;
+        }
+        .email-header {
+          width: 100%;
+          background-image: url(./header-background.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+        .email-header-content {
+          width: 480px;
+          margin: auto;
+          text-align: center;
+          background-color: #ffffff;
+          border-radius: 8px 8px 0 0;
+          margin-top: 40px;
+          padding: 40px 20px 0 20px;
+          border-color: #e3e5e8;
+          border-style: solid;
+          border-width: 1px 1px 0 1px;
+        }
+
+        .company-logo {
+          height: 40px;
+        }
+
+        .company-name {
+          margin: 0;
+          padding: 1rem;
+          font-size: 1rem;
+          font-weight: 500;
+          border-bottom: 1px solid #e3e5e8;
+          word-break: break-word;
+        }
+        .email-center {
+          width: 100%;
+        }
+        .email-center-content {
+          text-align: center;
+          width: 480px;
+          margin: auto;
+          background-color: #ffffff;
+          border-radius: 0 0 8px 8px;
+          border-color: #e3e5e8;
+          border-style: solid;
+          border-width: 0 1px 1px 1px;
+          padding: 0 20px 40px 20px;
+        }
+        .payment-request-amount {
+          font-size: 2.25rem;
+          font-weight: bold;
+          padding-top: 0.37rem;
+          word-break: break-word;
+        }
+        .payment-request-desc {
+          padding: 8px 0;
+          font-size: 0.9rem;
+          border-bottom: 1px solid #e3e5e8;
+          color: #393a3d;
+          word-break: break-word;
+        }
+        .payment-request-button {
+          display: inline-block;
+          margin-top: 20px;
+          padding: 8px 24px;
+          background: #2ca01c;
+          border-radius: 20px;
+          border: none;
+        }
+        .pay-button-text {
+          align-self: center;
+          margin: 0;
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 19px;
+          text-align: center;
+          color: #ffffff;
+        }
+        .email-footer {
+          width: 100%;
+        }
+
+        .email-footer-content {
+          margin-top: 20px;
+          width: 480px;
+          margin-left: auto;
+          margin-right: auto;
+          background-color: #ffffff;
+        }
+
+        .footer-content-child {
+          margin: auto;
+        }
+
+        .intuit-copyright {
+          width: 277px;
+          font-size: 0.75rem;
+        }
+
+        .intuit-links {
+          width: 199px;
+          text-decoration-line: underline;
+          font-size: 0.75rem;
+          text-align: center;
+        }
+
+        .footer-link-item {
+          padding-left: 5px;
+        }
+
+        .privacy-link, .security-link {
+          border-right: 1px solid #aaaaaa;
+          padding-right: 5px;
+        }
+
+        .quickbooks-logo {
+          text-align: center;
+          width: 100%;
+          margin-top: 20px;
+        }
+        
+        .logo-image {
+          height: 26px;
+          width: 135px;
+        }
+
+        @media only screen and (max-width: 520px) {
+          .footer-content-child {
+            text-align: center;
+          }
+          .intuit-links {
+            margin-top: 4px;
+          }
+          .email-header-content, .email-center-content, .email-footer-content {
+            width: 90%
+          }
+        }
+
+        @media only screen and (min-width: 521px) {
+          .footer-content-child {
+            display: inline-block;
+          }
+        }
+      </style>
+  </head>
+  <body>
+      <table class="email-template">
+        <tbody>
+          <tr class="email-header">
+            <td>
+              <table class="email-header-content">
+                <tbody>
+                  <tr>
+                    <td align="center">
+                      <a target="_blank"><img class="company-logo" src='https://c23.e2e.qbo.intuit.com/qbo23/ext/Image/show/284642088747311/1?15333123400000' style='display: block; margin-left: auto; margin-right: auto; max-height: 150px; max-width: 100%;' /></a>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="company-name">
+                      Stark Industries
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr class="email-center">
+            <td>
+              <table class="email-center-content">
+                <tbody>
+                  <tr>
+                    <td class="payment-request-amount">$1,000.00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="payment-request-desc">Description
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a class="payment-request-button" target="_blank">
+                        <span class="pay-button-text">Pay</span>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr class="email-footer">
+          <td>
+            <table class="email-footer-content">
+              <tbody>
+                <tr>
+              <td>
+                  <table class="footer-content-child intuit-copyright">
+              <tbody>
+                <tr><td>© 2020 Intuit Inc., All rights reserved.</td>
+                </tr>
+                    </tbody>
+                </table>
+      
+                  <table class="footer-content-child intuit-links">
+                    <tbody>
+                      <tr>
+                        <td class="footer-link-item privacy-link"> <a target="_blank" href="http://">Privacy</a> </td>
+                        <td class="footer-link-item security-link"> <a target="_blank" href="http://">Security</a> </td>
+                        <td class="footer-link-item"> <a target="_blank" href="http://">Terms of Service</a> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+      
+                  <table class="quickbooks-logo">
+                    <tbody>
+                      <tr>
+                        <td align="center">
+                          <a target="_blank">
+                            <img class="logo-image" src="./quickbooks-logo.png" alt="Quickbooks logo" />
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
